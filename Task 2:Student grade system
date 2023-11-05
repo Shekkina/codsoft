@@ -1,0 +1,70 @@
+package codsoft;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author Shekkinah
+ */
+public class grade {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        Scanner o=new Scanner(System.in);
+       System.out.println("Enter your name:");
+       
+       System.out.println("Enter number of subjects:");
+       int n=o.nextInt();
+       System.out.println("Enter the marks for the subjects:");
+       int sum=0;
+      
+       for(int i=1;i<=n;i++)
+       {
+           System.out.println("Enter mark "+i+":");
+           int m=o.nextInt();
+           sum+=m;
+       }
+       
+       int avg=sum/n;
+      
+       if(avg<=50)
+       {
+          
+            System.out.println("The grade is U");
+       
+       }
+       else if(avg>50&&avg<=60)
+       {
+           
+            System.out.println("The grade is D");
+       
+       }
+        else if(avg>60&&avg<=70)
+       {
+           
+            System.out.println("The grade is C");
+       
+       } else if(avg>70&&avg<=80)
+       {
+           
+            System.out.println("The grade is B");
+       
+       } else if(avg>80&&avg<=90)
+       {
+          
+            System.out.println("The grade is A");
+       
+       } 
+       else if(avg>90)
+       {
+           
+            System.out.println("The grade is O");
+       
+       }
+     
+    }
+    
+}
